@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/LavenderBlush">
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/sign_up_tb"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/MediumSeaGreen" />
+
+        <india.evayadesk.com.evayadesk.ui.customui.TypefacedEditText
+                android:id="@+id/company_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/company_name"
+                android:layout_marginTop="@dimen/margin_100dp"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"/>
+
+        <india.evayadesk.com.evayadesk.ui.customui.TypefacedEditText
+                android:id="@+id/plan_et"
+                android:layout_below="@id/company_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/plan"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"/>
+
+        <india.evayadesk.com.evayadesk.ui.customui.TypefacedEditText
+                android:id="@+id/admin_et"
+                android:layout_below="@id/plan_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Admin_name"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"/>
+
+        <india.evayadesk.com.evayadesk.ui.customui.TypefacedEditText
+                android:id="@+id/email_et"
+                android:layout_below="@id/admin_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"/>
+
+        <india.evayadesk.com.evayadesk.ui.customui.TypefacedEditText
+                android:id="@+id/phone_et"
+                android:layout_below="@id/email_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"/>
+
+        <india.evayadesk.com.evayadesk.ui.customui.TypefacedEditText
+                android:id="@+id/password_et"
+                android:layout_below="@id/phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Password"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"/>
+
+        <india.evayadesk.com.evayadesk.ui.customui.TypefacedEditText
+                android:id="@+id/confirm_pass_et"
+                android:layout_below="@id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Confirm_password"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"/>
+
+        <india.evayadesk.com.evayadesk.ui.customui.TypefacedEditText
+                android:id="@+id/pass_phrase_et"
+                android:layout_below="@id/confirm_pass_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pass_phrase"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"/>
+<!--
+        <india.eva.com.goldenspiral.ui.customui.TypefacedTextView
+                android:id="@+id/accept_tv"
+                android:layout_below="@id/pass_phrase_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accept"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_20dp" />
+                -->
+        <CheckBox
+                android:id="@+id/accept_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/accept"
+                android:layout_below="@id/pass_phrase_et"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                />
+
+        <india.evayadesk.com.evayadesk.ui.customui.TypefacedButton
+        android:id="@+id/create_desk_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accept_cb"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/darker_gray"
+        android:text="@string/create_my_desk" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

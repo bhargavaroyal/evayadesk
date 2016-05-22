@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/blog_tb"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_blue_dark" />
+
+    <WebView
+            android:layout_width="match_parent"
+             android:layout_height="match_parent"
+            android:id="@+id/blog_wv"></WebView>
+
+</RelativeLayout>
