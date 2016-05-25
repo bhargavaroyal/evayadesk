@@ -1,5 +1,9 @@
 package india.evayadesk.com.evayadesk;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.VolleyLog;
+
 import android.app.Application;
 import android.content.Context;
 import android.text.TextUtils;
@@ -9,6 +13,8 @@ import android.text.TextUtils;
  */
 public class EvaApplication extends Application {
     private static EvaApplication sEvaApplication = null;
+    private RequestQueue              mRequestqueue;
+    public static final String        TAG = "Evayadeskplication";
 
     @Override
     public void onCreate() {
