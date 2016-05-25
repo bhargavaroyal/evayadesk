@@ -1,4 +1,4 @@
-package india.evayadesk.com.evayadesk.util;
+package india.evayadesk.com.evayadesk;
 
 import android.app.Application;
 import android.content.Context;

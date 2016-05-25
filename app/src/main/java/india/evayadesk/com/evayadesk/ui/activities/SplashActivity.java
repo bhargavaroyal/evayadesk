@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 
+import india.evayadesk.com.evayadesk.EvaApplication;
 import india.evayadesk.com.evayadesk.R;
 import india.evayadesk.com.evayadesk.models.SharedPreferencesManager;
 import india.evayadesk.com.evayadesk.util.SharedConstants;
@@ -14,10 +15,11 @@ import india.evayadesk.com.evayadesk.util.SharedConstants;
 /**
  * Created by bhargavagugamsetty on 17/05/16.
  */
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
     public static final long mSplashTimeDelay = 2 * 1000;
     private Handler mHandler = null;
     private SplashRunnableThread mSplashRunnableThread = null;
+    private static final String TAG = "SplashActivity.class";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
         initFields();
-
+        EvaApplication.getInstance();
     }
 
     @Override
