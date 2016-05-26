@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import india.evayadesk.com.evayadesk.R;
-import india.evayadesk.com.evayadesk.fragments.TutorialFragment;
+import india.evayadesk.com.evayadesk.ui.fragments.TutorialFragment;
 import india.evayadesk.com.evayadesk.models.SharedPreferencesManager;
 import india.evayadesk.com.evayadesk.util.SharedConstants;
 

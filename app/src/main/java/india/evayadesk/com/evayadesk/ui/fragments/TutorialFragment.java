@@ -1,4 +1,4 @@
-package india.evayadesk.com.evayadesk.fragments;
+package india.evayadesk.com.evayadesk.ui.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

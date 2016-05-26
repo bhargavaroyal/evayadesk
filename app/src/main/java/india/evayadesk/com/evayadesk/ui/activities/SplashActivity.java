@@ -3,10 +3,9 @@ package india.evayadesk.com.evayadesk.ui.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 
-import india.evayadesk.com.evayadesk.EvaApplication;
+import india.evayadesk.com.evayadesk.application.EvaApplication;
 import india.evayadesk.com.evayadesk.R;
 import india.evayadesk.com.evayadesk.models.SharedPreferencesManager;
 import india.evayadesk.com.evayadesk.util.SharedConstants;
