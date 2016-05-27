@@ -1,9 +1,12 @@
 package india.evayadesk.com.evayadesk.network;
 
 import com.android.volley.Response;
+import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 
+import org.json.JSONException;
 import org.json.JSONObject;
+import org.xml.sax.Parser;
 
 import android.content.Context;
 import android.util.Log;
@@ -68,7 +71,15 @@ public class NWRequest {
         JsonObjectRequest req = new JsonObjectRequest(finalURL, jsonObj, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject jsonObject) {
-                
+                try {
+                    VolleyLog.v("Response:%n %s", response.toString(4));
+                    Parser parser = new Parser();
+                    parser.parseHTTPResponse(getRequestCode(), response, mListener);
+
+                    Log.i("response1", "res1" + response);
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
             }
         }
 
